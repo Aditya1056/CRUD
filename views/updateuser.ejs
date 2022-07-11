@@ -1,0 +1,61 @@
+<!--include header-->
+<%-include('include/_header')%>
+<!--/include header-->
+
+
+
+
+
+   <!--main content-->
+   <div class="container">
+    <!--new user div-->
+    <div class="cls-1">
+        <div class="new-user">
+           <a href="/"><i class="fa-solid fa-backward"></i> All users</a>
+        </div>
+    </div>
+    <div class="cls-3">
+        <div class="register update"> <h3>Update Details</h3></div>
+        <div class="form">
+            <form method="POST" class="update_user">
+                <div class="form-items">
+                    <label for="name" class="form-item">Name</label>
+                    <br>
+                    <input type="hidden" name="id" value="<%= user._id%>">
+                    <input type="text" name="name" value="<%=user.name%>" placeholder="Enter your name">
+                </div>
+                <div class="form-items">
+                    <label for="email" class="form-item">Email</label>
+                    <br>
+                    <input type="text" name="email" value="<%=user.email%>" placeholder="@gmail.com">
+                </div>
+                <div class="form-items">
+                    <label for="gender" class="form-item">Gender</label>
+                    <br>
+                    <input type="radio" name="gender" value="male" <%= user.gender=='male'? 'checked':'' %>><label>Male</label>
+                    <input type="radio" name="gender" value="female" <%= user.gender=='female'? 'checked':'' %>><label>Female</label>
+                </div>
+                <div class="form-items">
+                    <label for="status" class="form-item">Status</label>
+                    <br>
+                    <input type="radio" name="status" value="Active" <%= user.status=='Active'? 'checked':'' %>><label>Active</label>
+                    <input type="radio" name="status" value="Inactive" <%= user.status=='Inactive'? 'checked':'' %>><label>Inactive</label>
+                </div>
+                <div class="form-items" title="click to save details">
+                    <button type="submit" class="button">SAVE</button>
+                </div>
+            </form>
+        </div>
+
+    </div>
+</div>
+<!--/main content-->
+
+   
+
+
+
+
+<!--include footer-->
+    <%-include('include/_footer')%>
+<!--/include footer-->

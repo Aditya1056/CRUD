@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
+*{
+    padding:0;
+    margin:0;
+}
+body{
+    background-color:lightcyan;
+    font-family: 'Bree Serif', serif;
+}
+.nav-bar{
+    background-color: rgb(58, 71, 67);
+    color:rgb(255, 255, 255);
+    padding:1rem;
+    display:flex;
+    justify-content: center;
+}
+.container{
+    width:1000px;
+    margin:auto;
+    margin-top: 5rem;
+    /* border:2px solid greenyellow; */
+}
+.cls-1{
+    display:flex;
+}
+.new-user a{
+    /* border:2px solid blue; */
+    background-color: rgb(198, 210, 234);
+    padding:5px;
+    font-size: larger;
+    border-radius: .5rem;
+    box-shadow: 1px 3px 5px rgb(150, 163, 189);
+}
+.cls-2{
+    margin-top:2rem;
+}
+.table-content{
+    /* border:2px solid red; */
+    background-color:rgb(198, 210, 234);
+    width:100%;
+    text-align: center;
+    font-size: large;
+}
+.action{
+    display:flex;
+    justify-content:space-evenly;
+}
+.rows{
+    color:rgb(30, 110, 229);
+}
+.rows:hover{
+    background-color:rgb(175, 189, 203);
+}
+.head-row{
+    color:white;
+    background-color: black;
+}
+td,th{
+    padding:.5rem;
+}
+a{
+    text-decoration: none;
+    border-radius:5px;
+    /* border:2px solid green; */
+    padding:7px;
+    color:rgb(67, 7, 123);
+    transition: all .5s;
+}
+a:hover{
+    background-color:rgb(18, 182, 247);
+}
+
+@media only screen and (max-width : 1000px){
+    .table-content{
+        display:block;
+        background-color:inherit;
+    }
+}
+.cls-3{
+    width:75%;
+    margin:auto;
+    /* border:2px solid red; */
+    margin-top:2rem;
+    font-size: larger;
+    color:rgb(70, 40, 122);
+}
+.register{
+    text-align: center;
+    padding:1rem 0;
+}
+.form-items{
+    padding:10px;
+    /* border:2px solid green; */
+}
+.form-items input[type="text"]{
+    width:100%;
+    padding:10px 5px;
+    border: 1px solid #ccc;
+    background-color: lightcyan;
+}
+.form-items button{
+    font-size: medium;
+    color:rgb(222, 209, 209);
+    background-color: rgb(15, 6, 6);
+    width:100%;
+    padding:10px;
+    cursor: pointer;
+    transition: all .5s;
+}
+.form-items input[type="radio"]{
+    cursor:pointer;
+}
+.form-items button:hover{
+    background-color:rgb(79, 27, 190);
+}
