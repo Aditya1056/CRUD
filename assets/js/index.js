@@ -13,7 +13,7 @@ $(".update_user").submit(function(event){
     })
     // console.log(data);
     var request={
-        "url":`http://localhost:3000/api/users/${data.id}`,
+        "url":`https://crud-user-management-portal.herokuapp.com/api/users/${data.id}`,
         "method":"PUT",
         "data":data
     }
@@ -30,7 +30,7 @@ if(window.location.pathname =="/"){
     $ondelete.click(function(event){
         var id = $(this).attr("user_id");
         var request={
-            "url":`http://localhost:3000/api/users/${id}`,
+            "url":`https://crud-user-management-portal.herokuapp.com/api/users/${id}`,
             "method":"DELETE",
         }
 
