@@ -10,7 +10,7 @@ const app = express();
 
 const route= require('./server/routes/router');
 dotenv.config({path:'config.env'});
-let port = process.env.PORT || 3000;
+let port = process.env.PORT || 8080;
 
 
 
