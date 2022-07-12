@@ -4,7 +4,7 @@ const { response } = require('express');
 
 const home = (req,res)=>{
     //make a get request to /api/users
-    axios.get('http://localhost:3000/api/users')
+    axios.get('https://crud-user-management-portal.herokuapp.com/api/users')
         .then(function(response){
             res.render('index',{users:response.data});
         })
@@ -16,7 +16,7 @@ const adduser = (req,res)=>{
     res.render('adduser');
 }
 const updateuser = (req,res)=>{
-    axios.get('http://localhost:3000/api/users',{params:{id : req.query.id}})
+    axios.get('https://crud-user-management-portal.herokuapp.com/api/users',{params:{id : req.query.id}})
         .then(function(user){
             res.render('updateuser',{user:user.data});
         })
