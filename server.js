@@ -10,7 +10,7 @@ const app = express();
 
 const route= require('./server/routes/router');
 dotenv.config({path:'config.env'});
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 5000;
 
 
 
@@ -34,5 +34,5 @@ app.use('/js',express.static(path.resolve(__dirname,"assets/js")))
 app.use('/',route);
 
 app.listen(port,()=>{
-    console.log(`server listening on port http://localhost:${port}/`);
+    console.log(`server listening on port http://localhost:${port}`);
 })
