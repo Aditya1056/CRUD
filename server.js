@@ -10,7 +10,7 @@ const app = express();
 
 const route= require('./server/routes/router');
 dotenv.config({path:'config.env'});
-const port = process.env.PORT || 5000;
+const port = process.env.PORT || 3000;
 
 
 
